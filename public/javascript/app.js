@@ -15,10 +15,9 @@ createFormElem.addEventListener('submit', (event) => {
       return response.json()
     })
     .then(results => {
-      resultsElem.innerHTML = `<div class="success">Your short URL is: ${results.shortUrl}</div>`;
+      resultsElem.innerHTML = `<div class="success">Your short URL is: <a href="${results.shortUrl}">${results.shortUrl}</div>`;
     })  
     .catch(error => {
-      console.log(error);
       error.json()
         .then((error) => resultsElem.innerHTML = `<div class="error">${error.message}</div>`);
     })

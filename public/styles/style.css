@@ -1,17 +1,22 @@
+html, body {
+  height: 100%;
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fafafa;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+  margin-top: 4rem;
+  width: 800px;
 }
 
-h1 { 
+h1 {
   text-align: center;
-  color: #dc6464;
+  color: #8a2b2b;
   font-weight: 900;
   text-shadow: 1px 1px #ddd;
   text-transform: uppercase;
@@ -31,10 +36,12 @@ h1 {
 .action-box form input {
   flex: 3;
   padding: 10px;
+  border: 1px solid #eee;
+  outline: none;
 }
 
 .action-box form button {
-  background-color: #dc6464;
+  background-color: #8a2b2b;
   color: #fff;
   flex: 2;  
 }
@@ -44,13 +51,17 @@ h1 {
 }
 
 #results .error {
-  background-color: #be2626;
+  background-color: #8a2b2b;
   color: #fff;
   padding: 10px; 
 }
 
 #results .success {
-  background-color: #48c648;
+  background-color: #79b279;
   color: #fff;
   padding: 10px; 
+}
+
+#results .success a {
+  color: #fff;
 }
